@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ePCR & Narcotic Checklist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            color: #ffffff;
+            border-bottom: 2px solid #444;
+            padding-bottom: 5px;
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .checkbox-container input[type="checkbox"] {
+            width: 24px;
+            height: 24px;
+            margin-right: 12px;
+        }
+        label {
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h2>ePCR Finalization Checklist</h2>
+        <div class="checkbox-container"><input type="checkbox"><label>Two complete patient assessments documented</label></div>
+        <div class="checkbox-container"><input type="checkbox"><label>Two sets of vital signs recorded</label></div>
+        <div class="checkbox-container"><input type="checkbox"><label>EKG and vitals imported from monitor</label></div>
+        <div class="checkbox-container"><input type="checkbox"><label>CSN entered on ePCR</label></div>
+        <div class="checkbox-container"><input type="checkbox"><label>All required signatures obtained (Primary, Secondary, Patient, Facility Rep)</label></div>
+        <div class="checkbox-container"><input type="checkbox"><label>All medications/interventions documented under Procedures</label></div>
+        <div class="checkbox-container"><input type="checkbox"><label>Narrative filled out using DCHART format</label></div>
+        <div class="checkbox-container"><input type="checkbox"><label>Narrative includes all procedures/interventions performed</label></div>
+        <div class="checkbox-container"><input type="checkbox"><label>All relevant attachments uploaded to the ePCR</label></div>
+        <div class="checkbox-container"><input type="checkbox"><label>Run posted/completed in ImageTrend</label></div>
+    
+        <label for="runNumber" style="margin-top: 20px; display: block;">Run Number:</label>
+        <input type="text" id="runNumber" style="width: 100%; padding: 10px; background-color: #2b2b2b; color: white; border: 1px solid #555; border-radius: 4px; margin-top: 5px;">
+
+        <label for="notes" style="margin-top: 20px; display: block;">Notes:</label>
+        <textarea id="notes" rows="4" style="width: 100%; padding: 10px; background-color: #2b2b2b; color: white; border: 1px solid #555; border-radius: 4px; margin-top: 5px;"></textarea>
+    </div>
+
+    <div class="section">
+        <h2>Narcotic Usage Documentation</h2>
+    
+        <div class="checkbox-container"><input type="checkbox"><label>Photo taken of narcotic vial/container (if no waste)</label></div>
+        <div class="checkbox-container"><input type="checkbox"><label>Photo uploaded to PsTrax</label></div>
+        <div class="checkbox-container"><input type="checkbox"><label>Narcotic details verified against PsTrax entry</label></div>
+        <div class="checkbox-container"><input type="checkbox"><label>All required signatures for narcotic use/waste obtained</label></div>
+    </div>
+</body>
+</html>
